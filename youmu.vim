@@ -21,19 +21,24 @@ hi Function guifg='#ddffdd'
 hi YoumuEnumMember guifg='#90c0cf'
 hi YoumuNamespace guifg='#008040'
 hi YoumuParameter guifg='#80d080'
-
 hi StatusLine   guifg=#f8f8f8 guibg=#3c3c3c
 hi StatusLineNC guifg=#d0d0d0 guibg=#2e2e2e
 
+" Rust
 hi link @lsp.type.namespace.rust YoumuNamespace
 hi link @lsp.type.enumMember.rust YoumuEnumMember
 hi link @lsp.type.selfKeyword.rust Constant
 hi link @lsp.type.parameter.rust YoumuParameter
 hi link @lsp.type.variable.rust Identifier
+hi link rustFoldBraces Operator
+hi! @lsp.mod.mutable.rust gui=underline
+
+" Xml
 hi link @tag.xml YoumuNamespace
 hi link @string.xml YoumuDimString
 hi link @tag.attribute.xml Statement
 hi link @tag.delimiter.xml Type
 hi link @punctuation.delimiter.xml @string.xml
-hi link rustFoldBraces Operator
-hi! @lsp.mod.mutable.rust gui=underline
+
+" Markdown
+hi link @markup.list.markdown Operator
