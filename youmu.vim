@@ -18,7 +18,8 @@ hi String guifg='#ffffde' gui=italic
 hi YoumuDimString guifg='#87cc7e' gui=italic
 hi Operator guifg='#ffffaa'
 hi Function guifg='#ddffdd'
-hi YoumuEnumMember guifg='#90c0cf'
+hi YoumuBlue guifg='#90c0cf'
+hi link YoumuEnumMember YoumuBlue
 hi YoumuNamespace guifg='#008040'
 hi YoumuParameter guifg='#80d080'
 hi StatusLine   guifg=#f8f8f8 guibg=#3c3c3c
@@ -40,5 +41,18 @@ hi link @tag.attribute.xml Statement
 hi link @tag.delimiter.xml Type
 hi link @punctuation.delimiter.xml @string.xml
 
+" Html
+hi link @tag.html YoumuNamespace
+hi link @tag.delimiter.html YoumuNamespace
+hi link @tag.attribute.html Statement
+
 " Markdown
 hi link @markup.list.markdown Operator
+
+" Python
+hi link @punctuation.bracket.python Operator
+hi link @punctuation.delimiter.python Operator
+hi link @module.python YoumuNamespace
+hi link @variable.parameter.python YoumuParameter
+hi link @variable.python Identifier
+hi link @string.python YoumuBlue
