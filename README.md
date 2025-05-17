@@ -1,9 +1,9 @@
 # Youmu Konpaku Inspired
 
-This is a colorscheme for nvim is inspired by [Youmu Konpaku](https://en.touhouwiki.net/wiki/Youmu_Konpaku) from Touhou games by ZUN.    
+This is a colorscheme for nvim is inspired by [Youmu Konpaku](https://en.touhouwiki.net/wiki/Youmu_Konpaku) from Touhou games by ZUN.
 (Though it looks like a swamp, ribbit)
 
-Besides general colors, it overwrites LSP tokens for rust, which was my ~~main~~ only target.
+Besides general colors, it overwrites LSP tokens for rust, and some other languages that I sometimes use or read.
 
 # Installation
 
@@ -24,4 +24,4 @@ vim.cmd([[
 
 ![example.png](./examples/example-01.png)
 
-This is `std::io` from rust and file in lazyvim environment.
+This is `std::io` from rust and the colorscheme file itself.
