@@ -7,7 +7,7 @@ if exists("syntax_on")
 endif
 
 set background=dark
-hi Special guifg=#b0ffa0
+hi Special guifg=#60FF40
 
 hi Normal guifg='#CCFFCC' guibg='#111f20'
 hi Statement guifg='#4eaa3c' gui=italic
