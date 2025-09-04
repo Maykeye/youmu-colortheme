@@ -20,6 +20,7 @@ hi YoumuDimString guifg='#87cc7e' gui=italic
 hi Operator guifg='#ffffaa'
 hi Function guifg='#ddffdd'
 hi YoumuBlue guifg='#90c0cf'
+hi YoumuBlueUnderline guifg='#90c0cf' gui=underline
 hi link YoumuEnumMember YoumuBlue
 hi YoumuNamespace guifg='#008040'
 hi YoumuParameter guifg='#80d080'
@@ -31,6 +32,7 @@ hi link @type.builtin.rust Type
 hi link @lsp.type.namespace.rust YoumuNamespace
 hi link @lsp.type.enumMember.rust YoumuEnumMember
 hi link @lsp.type.selfKeyword.rust Constant
+hi link @lsp.type.const.rust Constant
 hi link @lsp.type.parameter.rust YoumuParameter
 hi link @lsp.type.variable.rust Identifier
 hi link rustFoldBraces Operator
@@ -50,7 +52,7 @@ hi link @tag.attribute.html Statement
 
 " Markdown
 hi link @markup.list.markdown Operator
-
+hi link @markup.link.label.markdown_inline YoumuBlueUnderline
 " Python
 hi link @punctuation.bracket.python Operator
 hi link @punctuation.delimiter.python Operator
@@ -82,3 +84,6 @@ hi link @function.builtin.cmake Statement
 " Asm
 hi link @function.builtin.asm Statement
 hi link @variable.builtin.asm Identifier
+
+" CMake
+hi link cmakeArguments Identifier
